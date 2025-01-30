@@ -3,7 +3,8 @@
 I'm honored to introduce you to my recent project – a simple yet powerful Todo List application built with React and TypeScript.
 
 ---
-## See demo [HERE](https://kostiantynbond.github.io/react_todo-app/)
+## See demo: [HERE](https://kostiantynbond.github.io/react_todo-app/)
+---
 ## Project's Goal & Requirements
 The main goal of this project was to create an intuitive and functional task management tool that allows users to effortlessly organize their daily activities.
 
