@@ -1,50 +1,58 @@
-# React Todo App with API (complete)
+## Hello there, Todo App is on the line! 
 
-It is the third part of the React Todo App with API.
+I'm honored to introduce you to my recent project – a simple yet powerful Todo List application built with React and TypeScript.
 
-Take your code implemented for [Add and Delete](https://github.com/mate-academy/react_todo-app-add-and-delete)
-and implement the ability to toggle and rename todos.
+---
 
-> Here is [the working example](https://mate-academy.github.io/react_todo-app-with-api/)
+## Project's Goal & Requirements
+The main goal of this project was to create an intuitive and functional task management tool that allows users to effortlessly organize their daily activities.
 
-## Toggling a todo status
+### Project's Requirements:
+- Designing a clean and minimal UI for easy task management.
+- Implementing features such as adding, deleting, and editing todos.
+- Enabling filtering of tasks based on status (all, active, completed).
+- Ensuring smooth user experience with error handling and notifications.
+- Maintaining high performance with optimized API interactions.
 
-Toggle the `completed` status on `TodoStatus` change:
-- Install Prettier Extention and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/vscode/settings.json) to enable format on save.
-- covered the todo with a loader overlay while waiting for API response;
-- the status should be changed on success;
-- show the `Unable to update a todo` notification in case of API error.
+---
 
-Add the ability to toggle the completed status of all the todos with the `toggleAll` checkbox:
+## Key Features
+- **Performance Focused**: Lightweight and fast, ensuring smooth UX.
+- **Optimized for Accessibility**: Uses semantic HTML and ARIA attributes.
+- **Fully Responsive**: Mobile-first design for an optimal experience on any device.
+- **Error Handling**: Displays error messages for failed API requests.
+- **Efficient Task Filtering**: Quickly sort tasks based on their completion status.
+- **Keyboard Navigation Support**: Easily navigate and manage tasks using only the keyboard.
 
-- `toggleAll` button should have `active` class only if all the todos are completed;
-- `toggleAll` click changes its status to the opposite one, and sets this new status to all the todos;
-- it should work the same as several individual updates of the todos which statuses were actually changed;
-- don't send requests for the todos that were not changed;
+---
 
-## Renaming a todo
+## Used Technologies
+- **React**: Core library for UI development.
+- **TypeScript**: Ensuring type safety and better development experience.
+- **SCSS**: Enhanced styling capabilities.
+- **API**: Fetching and updating todos from the backend.
+- **ESLint & Prettier**: Keeping the codebase clean and maintainable.
 
-Implement the ability to edit a todo title on double click:
+---
 
-- show the edit form instead of the title and remove button;
-- saves changes on the form submit (just press `Enter`);
-- save changes when the field loses focus (`onBlur`);
-- if the new title is the same as the old one just cancel editing;
-- cancel editing on `Esс` key `keyup` event;
-- if the new title is empty delete the todo the same way the `x` button does it;
-- if the title was changed show the loader while waiting for the API response;
-- update the todo title on success;
-- show `Unable to update a todo` in case of API error;
-- or the deletion error message if we tried to delete the todo.
+## How to Run the Project on Your Local Machine?
+It's easy! Just follow these steps:
 
-## If you want to enable tests
-- open `cypress/integration/page.spec.js`
-- replace `describe.skip` with `describe` for the root `describe`
+1. **Clone this repository:**
+   ```sh
+   git clone https://github.com/your-repo/todo-app.git
+   cd todo-app
+   ```
 
-> ❗❗All tests should pass, even if some behaviour is not well explained in the task❗❗
+2. **Install all necessary dependencies:**
+   ```sh
+   npm install
+   ```
 
-## Instructions
+3. **Start the development server:**
+   ```sh
+   npm start
+   ```
 
-- Implement a solution following the [React task guideline](https://github.com/mate-academy/react_task-guideline#react-tasks-guideline).
-- Use the [React TypeScript cheat sheet](https://mate-academy.github.io/fe-program/js/extra/react-typescript).
-- Replace `<your_account>` with your Github username in the [DEMO LINK](https://YoNiga7.github.io/react_todo-app-with-api/) and add it to the PR description.
+4. **Done!** Your application will open in your browser at `http://localhost:3000/`.
+
